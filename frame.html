@@ -1,0 +1,951 @@
+
+<HTML dir="rtl">
+<HEAD>
+    <META http-equiv="Content-Type" content="text/html;charset=UTF-8 ">
+    <META name="vs_targetSchema" content="http://schemas.microsoft.com/intellisense/ie5">
+    <META http-equiv="Content-Language" content="fa">
+    <BASE target="_self">
+    <TITLE></TITLE>
+    <LINK rel="stylesheet" type="text/css" href="/_styles/Forms.css">
+    <style>
+		.DisQual
+		{
+		    color:Red;
+		    font-size:12px;
+		    font-weight:bold;
+		}
+    </style>
+</HEAD>
+<BODY scroll="no" onload="return window_onload()">
+    <DIV style="display: none">
+        <INPUT id="F89831" class="txt"><INPUT id="F43501" class="txt"><INPUT id="F52141"
+            class="txt"><INPUT id="F39351" class="txt"><INPUT id="F35451" class="txt"></DIV>
+    <TABLE height="170PX" width="99%" style="margin-top: 5px;table-layout:fixed">
+        <col width="115PX">
+        <col width="204PX">
+        <col width="85PX">
+        <col width="150PX">
+        <col width="*">
+        <TR>
+            <TD align="left">
+                شماره دانشجو&nbsp;:&nbsp;
+            </TD>
+            <TD>
+                <INPUT onchange2="ClearContent()" Pic="S" class="txt" id="F41251" Nex="" tabIndex="15"
+                    type="text" style="width: 90px" HELP="3" value="" Typ="C" Num="1" Nul="0" Lan="1"
+                    Cap="شماره دانشجو" Title="شماره دانشجو" Chk="0" Def="">
+                <img align="absmiddle" class="c1" by="1000" bh="15" src="/_Images/nophoto.gif" style="height: 15px;
+                    width: 15px; background-position: 0 -1000;" name="H3" onclick="HlpFldList=new Array('F41251','F51851'); FrameStdHlp.Show();">
+                <!--IMG align="absmiddle" class="Comm" name="H3" src="/_Images/Link_Help.gif" style=" height:15 ;width:15" onclick="HlpFldList=new Array('F41251','F51851'); FrameStdHlp.Show();"-->
+                <LABEL class="DATA" id="Education_Help" onclick="HlpFldList=new Array('F41251');window.parent.parent.Commander.act_data_frm('54')" style="display:none;font-weight: bold; cursor: pointer; color: blue; text-decoration: underline" >تحصيلات شخص</LABEL>
+
+            </TD>
+            <TD align="left">
+                دانشکده&nbsp;:&nbsp;
+            </TD>
+            <TD colspan="2">
+                <LABEL class="DATA" id="F61151">
+                </LABEL>
+            </TD>
+            <!--TD rowspan="6" valign="top">
+				</TD-->
+        </TR>
+        <TR>
+            <TD align="left">
+                نام خانوادگي و نام &nbsp;:&nbsp;
+            </TD>
+            <TD>
+                <LABEL class="DATA" id="F51851">
+                </LABEL>
+                <!--INPUT class="txt" id="F51851" Nex="" tabIndex="22" type="text" style=" ;display:none ;width:200" value="" Mat="" Typ="C" Num="0" Nul="1" Max="100" Min="1" Lan="1" Cap="نام و نام خانوادگي" Title="نام و نام خانوادگي" Chk="1" Def=""><SELECT id="HF51851" tabIndex="22" style=" ; display:none ;width:200;height:23" onchange="return F51851.ComboChange()">
+					</SELECT><IMG align="absmiddle" id="IF51851" src="/_Images/TextBox.gif" onclick="return window.parent.parent.Commander.ComboTextbox(this)"-->
+            </TD>
+            <TD align="left">
+                &nbsp;گروه آموزشي&nbsp;:&nbsp;
+            </TD>
+            <TD colspan="2">
+                <LABEL class="DATA" id="F16451">
+                </LABEL>
+            </TD>
+        </TR>
+        <TR>
+            <TD align="left">
+                نام پدر&nbsp;:&nbsp;
+            </TD>
+            <TD>
+                <LABEL class="DATA" id="F34501">
+                </LABEL>
+            </TD>
+            <TD align="left">
+                رشته&nbsp;:&nbsp;
+            </TD>
+            <TD colspan="2"><LABEL id="lblTaghResht" style="display: none; cursor: pointer;
+                    color: red; text-decoration: underline" onclick="window.parent.parent.Commander.act_data_frm('85')">تغيير
+                    رشته  </LABEL>
+                <LABEL class="DATA" id="F17551">
+                </LABEL>
+            </TD>
+        </TR>
+        <TR>
+            <TD align="left">
+                معدل کل&nbsp;:&nbsp;
+            </TD>
+            <TD>
+                <LABEL class="DATA" id="F41701">
+                </LABEL>
+            </TD>
+            <TD align="left">
+                مقطع و دوره&nbsp;:&nbsp;
+            </TD>
+            <TD colspan="2">
+                <LABEL class="DATA" id="F41301">
+                </LABEL>
+                &nbsp;<LABEL class="DATA" id="F41351"></LABEL>&nbsp;&nbsp;&nbsp;&nbsp;<LABEL class="DATA"
+                    id="F51801" style="font-weight: bold; cursor: pointer; color: blue; text-decoration: underline"
+                    onmouseover="ShowDiv(DivPHD,this);" onmouseout="DivPHD.style.display='none'"></LABEL>
+            </TD>
+        </TR>
+        <TR>
+            <TD align="left">
+                واحد گذرانده&nbsp;:&nbsp;
+            </TD>
+            <TD>
+                <LABEL class="DATA" id="F41801">
+                </LABEL>
+            </TD>
+            <TD align="left">
+                واحد / مرکز&nbsp;:&nbsp;
+            </TD>
+            <TD colspan="2">
+                <LABEL class="DATA" id="E57991">
+                </LABEL>
+            </TD>
+        </TR>
+        <TR>
+            <TD align="left">
+                مشروطي کل &nbsp;:&nbsp;
+            </TD>
+            <TD>
+                <LABEL class="DATA" id="F42401">
+                </LABEL>
+                &nbsp; متوالي: &nbsp;<LABEL class="DATA" id="F42451"></LABEL>&nbsp; خاص: &nbsp;<LABEL
+                    class="DATA" id="F42371"></LABEL>
+            </TD>
+            <TD align="left">
+                آخرين وضعيت&nbsp;:&nbsp;
+            </TD>
+            <TD ColSpan="2">
+                <LABEL class="DATA" id="F43301">
+                </LABEL>
+                &nbsp;&nbsp;&nbsp;&nbsp;<LABEL id="lblFeraghat" onmouseover="ShowDiv(DivFeraghat,this)/*var left=0,a=this;while(a.tagName!='BODY'){left+=a.offsetLeft;a=a.offsetParent};DivFeraghat.style.left=left;DivFeraghat.style.display='';*/"
+                    onmouseout="DivFeraghat.style.display='none';" style="display: none; cursor: pointer;
+                    color: red; text-decoration: underline">رشته فارغ التحصيلي</LABEL>
+            </TD>
+        </TR>
+        <TR>
+            <TD align="left" valign="top">
+                استاد راهنما &nbsp;:&nbsp;
+            </TD>
+            <td valign="top">
+                <label class="DATA" id="F51852" ti="F518520">
+                </LABEL>
+                
+                
+                
+                
+            </TD>
+            <td align="left" valign="top">
+                اجازه ثبت نام&nbsp;:&nbsp;
+            </TD>
+            <td valign="top">
+                <LABEL class="DATA" id="F42251" onmouseover="if(this.innerText=='ندارد'){DivT02.style.display='';AbsPos(this);DivT02.style.left=this.al-DivT02.scrollWidth/2.0;DivT02.style.top=this.at+this.offsetHeight;}"
+                    onmouseout="DivT02.style.display='none'">
+                </LABEL>
+            </TD>
+            <TD align="RIGHT" id="tdent" valign="bottom">
+                <LABEL id="multdep" class="DATA" style="visibility: hidden; font-weight: bold; cursor: pointer;
+                    color: blue; text-decoration: underline" onmouseover="ShowDiv(Divmultdep,this);"
+                    onmouseout="Divmultdep.style.display='none'">
+                </LABEL>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<LABEL id="ent" class="DATA" style="display: none;
+                    font-weight: bold; cursor: pointer; color: blue; text-decoration: underline" onmouseover="DivEntran.style.left=T01Div.offsetLeft+15;DivEntran.style.top=tdent.offsetTop+tdent.clientHeight+4;DivEntran.style.display='';"
+                    onmouseout="DivEntran.style.display='none'">نوع ورود و تسهيلات</LABEL>
+            </TD>
+        </TR>
+        <tr><td style="text-align:left"><LABEL class="DATA" id="G17541" onclick="HlpFldList=new Array('F41251');window.parent.parent.Commander.act_data_frm('55')" style="font-weight: bold; cursor: pointer; color: blue; text-decoration: underline" ></LABEL>
+        </td>
+        </tr>
+        <tr>
+        <td id="__vac" colspan="4" align="center">
+        
+        <label id="I3997" ></label><label id="I3997_2" style="display:none" ></label>
+        </td>
+        </tr>
+    </TABLE>
+    <IMG id="pic" style="display: none; left: 25px; position: absolute; top: 5px;width: 88px;
+        height: 113px"  onmouseover="this.style.width='';this.style.height='';" onmouseout="this.style.width='88';this.style.height='113';">
+    <div id="T01Tit" style="width: 769px;"><TABLE  border="1" style="border-right: black 1px solid; table-layout: fixed;
+        border-top: black 1px solid; margin-top: 3px; border-left: black 1px solid; cursor: default;
+        margin-right: 5px; border-bottom: black 1px solid; border-collapse: collapse">
+        <TR class="title2">
+            <TD width="27">
+            </TD>
+            <TD width="36">
+            </TD>
+            <TD width="193">
+            </TD>
+            <TD width="39">
+            </TD>
+            <TD width="39">
+            </TD>
+            <TD width="39">
+            </TD>
+            <TD width="39">
+            </TD>
+            <TD width="39">
+            </TD>
+            <TD width="38">
+            </TD>
+            <TD width="38">
+            </TD>
+            <TD width="38">
+            </TD>
+            <TD width="38">
+            </TD>
+            <TD width="40">
+            </TD>
+            <TD width="40">
+            </TD>
+            <TD width="38">
+            </TD>
+            <TD width="45">
+            </TD>
+            <!--TD width="70"></TD-->
+        </TR>
+        <TR class="title" style="height: 12pt" valign="bottom">
+            <TD align="middle" rowspan="3">
+                رديف
+            </TD>
+            <TD align="middle" rowspan="3">
+                ترم
+            </TD>
+            <TD align="middle" rowspan="3">
+                وضع و نوع ترم
+            </TD>
+            <TD align="middle" colspan="2">
+                اخذ شــــده
+            </TD>
+            <TD align="middle" colspan="3">
+                واحدگذرانده
+            </TD>
+            <TD align="middle" rowspan="3">
+                اعلام نشـده
+            </TD>
+            <TD align="middle" rowspan="3">
+                واحد ناتمام
+            </TD>
+            <TD align="middle" rowspan="3">
+                حذف شــــده
+            </TD>
+            <TD align="middle" rowspan="3">
+                رد شــــده
+            </TD>
+            <TD align="middle" colspan="2">
+                معدل
+            </TD>
+            <TD align="middle" rowspan="3">
+                مشروط
+            </TD>
+            <TD align="middle" rowspan="3">
+                شهريه
+            </TD>
+        </TR>
+        <TR class="title" style="height: 12pt" valign="bottom">
+            <TD align="middle">
+                ترم
+            </TD>
+            <!--TD align="middle">کل</TD-->
+            <TD align="middle">
+                متوالي
+            </TD>
+            <TD align="middle">
+                ترم
+            </TD>
+            <TD align="middle">
+                کل
+            </TD>
+            <TD align="middle">
+                متوالي
+            </TD>
+            <TD align="middle">
+                ترم
+            </TD>
+            <TD align="middle" title="معدل متوالي به معني معدل کل دانشجو تا ترم مورد نظر مي باشد">
+                متوالي
+            </TD>
+            <!--TD align="middle">ثابت</TD>
+				<TD align="middle">متغير</TD!-->
+        </TR>
+    </TABLE></div>
+    <DIV id="T01Div" style="overflow: auto; width: 819px; margin-right: 5px; height: 180px" onscroll="T01Tit.scrollLeft=this.scrollLeft">
+        <TABLE border="1" id="T01" onclick="T01_onclick(event)" class="simplegrid" HighlightRow="1"
+            style="border-right: black 1px solid; table-layout: fixed; border-top: black 1px solid;
+            border-left: black 1px solid; cursor: pointer; border-bottom: black 1px solid; border-collapse: collapse;width:auto">
+            <TR class="title2">
+                <TD width="27">
+                </TD>
+                <TD width="36">
+                </TD>
+                <TD width="193">
+                </TD>
+                <TD width="39">
+                </TD>
+                <TD width="39">
+                </TD>
+                <TD width="39">
+                </TD>
+                <TD width="39">
+                </TD>
+                <TD width="39">
+                </TD>
+                <TD width="38">
+                </TD>
+                <TD width="38">
+                </TD>
+                <TD width="38">
+                </TD>
+                <TD width="38">
+                </TD>
+                <TD width="40">
+                </TD>
+                <TD width="40">
+                </TD>
+                <TD width="38">
+                </TD>
+                <TD width="45">
+                </TD>
+                <TD width="1">
+                </TD>
+                <!--TD width="70"></TD-->
+            </TR>
+        </TABLE>
+    </DIV>
+    <!--DIV style="MARGIN-TOP: 10px;  "></DIV-->
+    <TABLE id="tblOverall">
+        <TR>
+            <TD>
+                <TABLE style="margin-right: 10px; border-right: black 1px solid; border-top: black 1px solid;
+                    border-left: black 1px solid; border-bottom: black 1px solid">
+                    <TR>
+                        <TD align="left">
+                            معدل دانشگاه&nbsp;:&nbsp;
+                        </TD>
+                        <TD width="30">
+                            <LABEL class="DATA" id="F42191">
+                            </LABEL>
+                        </TD>
+                        <TD align="left">
+                            معدل دانشکده&nbsp;:&nbsp;
+                        </TD>
+                        <TD width="30">
+                            <LABEL class="DATA" id="F35431">
+                            </LABEL>
+                        </TD>
+                        <TD align="left">
+                            معدل رشته&nbsp;:&nbsp;
+                        </TD>
+                        <TD width="30">
+                            <LABEL class="DATA" id="F35461">
+                            </LABEL>
+                        </TD>
+                    </TR>
+                </TABLE>
+            </TD>
+            <!--TD align="left" width="420">
+					<TABLE id="tblToolbar">
+						<TR height="26">
+							<TD><INPUT align="absmiddle" id="OneCrsView" disabled type="image" class="Comm" title="مشاهده وضعيت يک درس" src="/_Images/OneCrsView.gif" onclick="DivCrs.style.display='';var top=0,left=0,a=this;while(a.tagName!='BODY'){top+=a.offsetTop;left+=a.offsetLeft+a.clientLeft;a=a.offsetParent};DivCrs.style.left=left-DivCrs.offsetWidth/2.0+this.offsetWidth/2.0;DivCrs.style.top=top-110;">
+							<TD><INPUT align="absmiddle" id="SpcView" disabled type="image" class="Comm" title="بررسی وضع نمره ، وضع درس ، نوع درس و نوع ثبت نام" src="/_Images/SpcView.gif" onclick="window.parent.parent.Commander.act_data_frm('70')">
+							<TD><INPUT align="absmiddle" id="Personally" disabled type="image" class="Comm" title="اطلاعات پرسنلي" src="/_Images/Personally.gif" onclick="window.parent.parent.Commander.act_data_frm('53')">
+							<TD><INPUT align="absmiddle" id="Notes" disabled type="image" class="Comm" title="يادداشت" src="/_Images/Notes.gif" onclick="window.parent.parent.Commander.act_data_frm('52')">
+							<TD><INPUT align="absmiddle" id="PreRegView" disabled type="image" class="Comm" title="ثبت نام مقدماتي" src="/_Images/PreRegView.gif" onclick="window.parent.parent.Commander.act_data_frm('51')">
+							<TD><INPUT align="absmiddle" id="RegView" disabled type="image" class="Comm" title="ثبت نام" src="/_Images/RegView.gif" onclick="window.parent.parent.Commander.act_data_frm('50')">
+							<TD><INPUT align="absmiddle" id="CostView" disabled type="image" class="Comm" title="وضعيت شهريه" src="/_Images/CostView.gif" onclick="window.parent.parent.Commander.act_data_frm('49')"</TD>
+						</TR>
+					</TABLE>
+				</TD-->
+            <TD align="left" width="420">
+                <TABLE id="tblToolbar">
+                    <TR height="26">
+                        <TD>
+                            <img align="absmiddle" id="OneCrsView" title="مشاهده وضعيت يک درس" disabled class="c1"
+                                by="3100" src="/_Images/nophoto.gif" style="width: 60px; background-position: 0 -3100;"
+                                onclick="DivCrs.style.display='';var top=0,left=0,a=this;while(a.tagName!='BODY'){top+=a.offsetTop;left+=a.offsetLeft+a.clientLeft;a=a.offsetParent};DivCrs.style.left=left-DivCrs.offsetWidth/2.0+this.offsetWidth/2.0;DivCrs.style.top=top-110;">
+                        </TD>
+                        <TD>
+                            <img align="absmiddle" id="SpcView" title="بررسی وضع نمره ، وضع درس ، نوع درس و نوع ثبت نام"
+                                disabled class="c1" by="3000" src="/_Images/nophoto.gif" style="width: 50px;
+                                background-position: 0 -3000;" onclick="window.parent.parent.Commander.act_data_frm('70')">
+                        </TD>
+                        <TD>
+                            <img align="absmiddle" id="Personally" title="اطلاعات پرسنلي" disabled class="c1"
+                                by="2900" src="/_Images/nophoto.gif" style="width: 50px; background-position: 0 -2900;"
+                                onclick="window.parent.parent.Commander.act_data_frm('53')">
+                        </TD>
+                        <TD>
+                            <img align="absmiddle" id="Notes" title="يادداشت" disabled class="c1" by="2800" src="/_Images/nophoto.gif"
+                                style="width: 50px; background-position: 0 -2800;" onclick="window.parent.parent.Commander.act_data_frm('52')">
+                        </TD>
+                        <TD>
+                            <img align="absmiddle" id="PreRegView" title="ثبت نام مقدماتي" disabled class="c1"
+                                by="2700" src="/_Images/nophoto.gif" style="width: 50px; background-position: 0 -2700;"
+                                onclick="window.parent.parent.Commander.act_data_frm('51')">
+                        </TD>
+                        <TD>
+                            <img align="absmiddle" id="RegView" disabled class="c1" by="2600" src="/_Images/nophoto.gif"
+                                style="width: 50px; background-position: 0 -2600;" onclick="window.parent.parent.Commander.act_data_frm('50')"
+                                title="ثبت نام">
+                        </TD>
+                        <TD>
+                            <img align="absmiddle" id="CostView" disabled class="c1" by="200" src="/_Images/nophoto.gif"
+                                style="width: 50px; background-position: 0 -200;" onclick="window.parent.parent.Commander.act_data_frm('49')"
+                                title="وضعيت شهريه">
+                        </TD>
+                    </TR>
+                </TABLE>
+            </TD>
+        </TR>
+    </TABLE>
+    <DIV id="DivT02" style="border-right: thin outset; border-top: thin outset; display: none;
+        border-left: thin outset; border-bottom: thin outset; position: absolute;">
+        <TABLE id="T02" class="simplegrid" cellpadding="4" cellspacing="0" border="1">
+            <TR class="title">
+                <TD width="27" align="CENTER">
+                    رديف
+                </TD>
+                <TD width="35" align="CENTER">
+                    ترم
+                </TD>
+                <TD width="100" align="CENTER">
+                    دليل
+                </TD>
+                <TD width="200" align="CENTER">
+                    توضيحات
+                </TD>
+            </TR>
+        </TABLE>
+    </DIV>
+    <DIV id="DivEntran" style="border: thin outset; display: none; position: absolute;
+        background-color: #ffffcc">
+        <TABLE height="70" style="margin: 3px; color: #600000">
+            <TR>
+                <TD align="left" width="130">
+                    نوع ورود به آموزش عالي
+                </TD>
+                <TD>
+                    &nbsp;:&nbsp;
+                </TD>
+                <TD width="150">
+                    <LABEL class="DATA" id="F67301">
+                    </LABEL>
+                </TD>
+            </TR>
+            <TR>
+                <TD align="left">
+                    نوع ورود به دانشگاه
+                </TD>
+                <TD>
+                    &nbsp;:&nbsp;
+                </TD>
+                <TD>
+                    <LABEL class="DATA" id="F35601">
+                    </LABEL>
+                </TD>
+            </TR>
+            <TR>
+                <TD align="left">
+                    استفاده از تسهيلات
+                </TD>
+                <TD>
+                    &nbsp;:&nbsp;
+                </TD>
+                <TD>
+                    <LABEL class="DATA" id="F35651">
+                    </LABEL>
+                </TD>
+            </TR>
+            <TR>
+                <TD align="left">
+                    دانشجوي خاص
+                </TD>
+                <TD>
+                    &nbsp;:&nbsp;
+                </TD>
+                <TD>
+                    <LABEL class="DATA" id="F35411">
+                    </LABEL>
+                </TD>
+            </TR>
+        </TABLE>
+    </DIV>
+    <DIV id="Divmultdep" style="border: thin outset; display: none; position: absolute;
+        background-color: #ffffcc">
+        <TABLE id="tblmultidep1" height="110" style="display: none; margin: 3px; color: #600000">
+            <TR>
+                <TD align="left" width="70">
+                    دانشکده
+                </TD>
+                <TD>
+                    &nbsp;:&nbsp;
+                </TD>
+                <TD width="150">
+                    <LABEL class="DATA" id="F21801">
+                    </LABEL>
+                </TD>
+            </TR>
+            <TR>
+                <TD align="left">
+                    گروه آموزشي
+                </TD>
+                <TD>
+                    &nbsp;:&nbsp;
+                </TD>
+                <TD>
+                    <LABEL class="DATA" id="F21851">
+                    </LABEL>
+                </TD>
+            </TR>
+            <TR>
+                <TD align="left">
+                    رشته
+                </TD>
+                <TD>
+                    &nbsp;:&nbsp;
+                </TD>
+                <TD>
+                    <LABEL class="DATA" id="F21901">
+                    </LABEL>
+                </TD>
+            </TR>
+            <TR>
+                <TD align="left">
+                    مقطع
+                </TD>
+                <TD>
+                    &nbsp;:&nbsp;
+                </TD>
+                <TD>
+                    <LABEL class="DATA" id="F21701">
+                    </LABEL>
+                </TD>
+            </TR>
+            <TR>
+                <TD align="left">
+                    دوره
+                </TD>
+                <TD>
+                    &nbsp;:&nbsp;
+                </TD>
+                <TD>
+                    <LABEL class="DATA" id="F21751">
+                    </LABEL>
+                </TD>
+            </TR>
+            
+        </TABLE>
+        <TABLE id="tblmultidep1_2" height="65" style="display: none; margin: 3px; color: #600000">
+            
+            <TR>
+                <TD align="left">
+                    استاد راهنما
+                </TD>
+                <TD>
+                    &nbsp;:&nbsp;
+                </TD>
+                <TD>
+                    <LABEL class="DATA" id="F21951">
+                    </LABEL>
+                </TD>
+            </TR>
+            <TR>
+                <TD align="left">
+                    معدل رشته اول
+                </TD>
+                <TD>
+                    &nbsp;:&nbsp;
+                </TD>
+                <TD>
+                    <LABEL class="DATA" id="F41702">
+                    </LABEL>
+                </TD>
+            </TR>
+            <TR>
+                <TD align="left">
+                    معدل رشته دوم
+                </TD>
+                <TD>
+                    &nbsp;:&nbsp;
+                </TD>
+                <TD>
+                    <LABEL class="DATA" id="F41703">
+                    </LABEL>
+                </TD>
+            </TR>
+        </TABLE>
+        <TABLE id="tblmultidep2" height="80" style="display: none; margin: 3px; color: #600000">
+            <TR>
+                <TD align="left" width="70">
+                    رشته
+                </TD>
+                <TD>
+                    &nbsp;:&nbsp;
+                </TD>
+                <TD width="150">
+                    <LABEL class="DATA" id="F21971">
+                    </LABEL>
+                </TD>
+            </TR>
+            <TR style="display: none">
+                <TD align="left">
+                    گرايش
+                </TD>
+                <TD>
+                    &nbsp;:&nbsp;
+                </TD>
+                <TD>
+                    <LABEL class="DATA" id="F22001">
+                    </LABEL>
+                </TD>
+            </TR>
+            <TR>
+                <TD align="left">
+                    مقطع
+                </TD>
+                <TD>
+                    &nbsp;:&nbsp;
+                </TD>
+                <TD>
+                    <LABEL class="DATA" id="F21702">
+                    </LABEL>
+                </TD>
+            </TR>
+            <TR>
+                <TD align="left">
+                    دوره
+                </TD>
+                <TD>
+                    &nbsp;:&nbsp;
+                </TD>
+                <TD>
+                    <LABEL class="DATA" id="F21752">
+                    </LABEL>
+                </TD>
+            </TR>
+        </TABLE>
+    </DIV>
+    <DIV id="DivFeraghat" style="border-right: thin outset; border-top: thin outset;
+        display: none; left: 150px; border-left: thin outset; border-bottom: thin outset;
+        position: absolute; top: 99px; background-color: #ffffcc">
+        <TABLE border=1 id="TblFeraghat" height="110" style="display: none; margin: 10px; color: #600000">
+            <TR>
+                <TD align="left">
+                    دانشکده
+                </TD>
+                <TD>
+                    &nbsp;:&nbsp;
+                </TD>
+                <TD>
+                    <LABEL class="DATA" id="F61152">
+                    </LABEL>
+                </TD>
+            </TR>
+            <TR>
+                <TD align="left">
+                    گروه آموزشي
+                </TD>
+                <TD>
+                    &nbsp;:&nbsp;
+                </TD>
+                <TD>
+                    <LABEL class="DATA" id="F38101">
+                    </LABEL>
+                </TD>
+            </TR>
+            <TR>
+                <TD align="left">
+                    رشته
+                </TD>
+                <TD>
+                    &nbsp;:&nbsp;
+                </TD>
+                <TD>
+                    <LABEL class="DATA" id="F38151">
+                    </LABEL>
+                </TD>
+            </TR>
+            <TR>
+                <TD align="left">
+                    مقطع
+                </TD>
+                <TD>
+                    &nbsp;:&nbsp;
+                </TD>
+                <TD>
+                    <LABEL class="DATA" id="F38201">
+                    </LABEL>
+                </TD>
+            </TR>
+            <TR>
+                <TD align="left">
+                    دوره
+                </TD>
+                <TD>
+                    &nbsp;:&nbsp;
+                </TD>
+                <TD>
+                    <LABEL class="DATA" id="F38221">
+                    </LABEL>
+                </TD>
+            </TR>
+        </TABLE>
+        <table height="20" style="margin: 10px; color: #600000">
+        <col width="80px" />
+        <col width="13px" />
+        <col width="30px" />
+            <TR>
+                <TD align="left">
+                    تاريخ دفاع
+                </TD>
+                <TD align="center">:</TD>
+                <TD>
+                    <LABEL class="DATA" id="F54421">
+                    </LABEL>
+                </TD>
+            </TR>
+        </table>
+        <table height="60" style="margin: 10px; color: #600000">
+            <tr>
+                <TD align="left">
+                    تاريخ پايان کار
+                </TD>
+                <TD>
+                    &nbsp;:&nbsp;
+                </TD>
+                <TD>
+                    <LABEL class="DATA" id="F65351">
+                    </LABEL>
+                </TD>
+            </tr>
+            <!--tr><td colspan=3>صورتجلسه فارغ التحصيلي</td></tr-->
+            <tr>
+                <TD>
+                    شماره نامه مجوز
+                </TD>
+                <TD>
+                    &nbsp;:&nbsp;
+                </TD>
+                <TD>
+                    <LABEL class="DATA" id="F35331">
+                    </LABEL>
+                </TD>
+            </tr>
+            <tr>
+                <TD>
+                    تاريخ نامه مجوز
+                </TD>
+                <TD>
+                    &nbsp;:&nbsp;
+                </TD>
+                <TD>
+                    <LABEL class="DATA" id="F35321">
+                    </LABEL>
+                </TD>
+            </tr>
+        </table>
+    </DIV>
+    <!--DIV id="DivCrs" class="window" style="DISPLAY: none; LEFT: 212px;   TOP: 252px">
+			<DIV style="LEFT: 270px; POSITION: absolute; TOP: 4px"><INPUT class="comm" type="image" src="/_Images/Close.gif" onclick="DivCrs.style.display='none';"></TD></DIV>
+			<TABLE style=" BORDER-BOTTOM: thin groove" ID="Table1">
+				<TR style="COLOR: white; BORDER-BOTTOM: black 1px solid; BACKGROUND-COLOR: #0038ca">
+					<TD colspan="7" align="center">مشاهده وضعيت يک درس دانشجو
+					</TD>
+				</TR>
+				<TR height="10">
+					<TD colspan="7"></TD>
+				</TR>
+				<TR>
+					<TD align="left">
+						شماره درس&nbsp;:&nbsp;</TD>
+					<TD>
+						<INPUT class="txt" id="F01951" Nex="F02001" tabIndex="15" type="text" style=";width:50" HELP="6" value="" Mat="" Typ="C" Fro="0" To="999" Num="1" Nul="0" Max="3" Min="1" Lan="1" Cap="شماره درس" Title="شماره درس" Chk="0" Def="">
+					</TD>
+					<TD align="left"><IMG align="absmiddle" class="Comm" name="H6" src="/_Images/FieldHelp.gif" style=" height:15 ;width:15" onclick="HlpFldList=Array('F01951','F01901','F01851','F02001'); window.parent.parent.Commander.act_data_frm('25')">
+					</TD>
+					<TD align="left"><INPUT class="txt" id="F01901" Nex="F01951" tabIndex="10" type="text" style="width:40" HELP="5" value="" Mat="" Typ="C" Fro="00" To="99" Num="1" Nul="0" Max="2" Min="1" Jus="R" Fil="0" Lan="1" Cap="شماره گروه آموزشي" Title="شماره گروه آموزشي درس" Chk="1" Def="">
+					</TD>
+					<TD align="left"><IMG align="absmiddle" class="Comm" name="H5" src="/_Images/FieldHelp.gif" style=" height:15 ;width:15" onclick="HlpFldList=Array('F01901'); window.parent.parent.Commander.act_data_frm('26')">
+					</TD>
+					<TD align="left"><INPUT class="txt" id="F01851" Nex="F01901" tabIndex="5" type="text" style="width:40" HELP="4" value="" Mat="" Typ="C" Fro="00" To="99" Num="1" Nul="0" Max="2" Min="1" Jus="R" Fil="0" Lan="1" Cap="شماره دانشكده" Title="شماره دانشكده درس" Chk="1" Def="">
+					</TD>
+					<TD width="30"><IMG align="absmiddle" class="Comm" name="H4" src="/_Images/FieldHelp.gif" style=" height:15 ;width:15" onclick="HlpFldList=Array('F01851');window.parent.parent.Commander.act_data_frm('27')">
+					</TD>
+				</TR>
+				<TR>
+					<TD align="left">
+						نام درس&nbsp;:&nbsp;</TD>
+					<TD ColSpan="6"><INPUT class="txt" id="F02001" Nex="" tabIndex="22" type="text" style="width:200" value="" Mat="" Typ="C" Num="0" Nul="1" Max="100" Min="1" Lan="1" Cap="نام" Title="نام" Chk="1" Def="">
+					</TD>
+				</TR>
+				<TR height="40">
+					<TD align="center" colspan="10">
+						<img id="View" title="مشاهده" class="c1" by="2400" src="/_Images/nophoto.gif" style="width:60px;BACKGROUND-POSITION: 0 -2400;" onclick="HlpFldList=Array();if(window.parent.parent.Commander.act_data_frm('65')<0)return; DivCrs.style.display='none';">
+						<!--INPUT class="comm" id="View" type="image" onclick="HlpFldList=Array();if(window.parent.parent.Commander.act_data_frm('65')<0)return; DivCrs.style.display='none';" src="/_Images/view.gif" title="مشاهده" width="50" height="21"-- > 
+						&nbsp;&nbsp;<INPUT class="comm" type="image" onclick="F01851.focus();F01851.value='';F01851.UpdateSndData();F01901.value='';F01901.UpdateSndData();F01951.value='';F01951.UpdateSndData();F02001.value='';F02001.UpdateSndData()" src="/_Images/Clear.gif" title="پاك كردن">&nbsp;&nbsp;<INPUT class="comm" type="image" onclick="DivCrs.style.display='none';" src="/_Images/Cancel.gif" title="انصراف"></TD>
+				</TR>
+			</TABLE>
+		</DIV-->
+    <DIV id="DivCrs" class="window" style="display: none; left: 212px; top: 252px">
+        <DIV style="left: 270px; position: absolute; top: 2px">
+            <img class="c1" by="2200" bh="12" style="height: 12px; width: 12px; background-position: 0 -2200;"
+                src="/_Images/nophoto.gif" onclick="DivCrs.style.display='none';">
+        </DIV>
+        <TABLE style="border-bottom: thin groove">
+            <TR style="color: white; border-bottom: black 1px solid; background-color: #0038ca">
+                <TD colspan="7" align="center">
+                    مشاهده وضعيت يک درس دانشجو
+                </TD>
+            </TR>
+            <TR height="10">
+                <TD colspan="7">
+                </TD>
+            </TR>
+            <TR>
+                <TD align="left">
+                    شماره درس&nbsp;:&nbsp;
+                </TD>
+                <TD>
+                    <INPUT class="txt" id="F01951" Nex="F02001" tabIndex="15" type="text" style="width: 50"
+                        HELP="6" value="" Mat="" Typ="C" Fro="0" To="999" Num="1" Nul="0" Max="3" Min="1"
+                        Lan="1" Cap="شماره درس" Title="شماره درس" Chk="0" Def="">
+                </TD>
+                <TD align="left">
+                    <IMG align="absmiddle" class="c1" by="1000" bh="15" name="H6" src="/_Images/nophoto.gif"
+                        style="height: 15px; width: 15px; background-position: 0 -1000;" onclick="HlpFldList=Array('F01951','F01901','F01851','F02001'); window.parent.parent.Commander.act_data_frm('25')">
+                </TD>
+                <TD align="left">
+                    <INPUT class="txt" id="F01901" Nex="F01951" tabIndex="10" type="text" style="width: 40"
+                        HELP="5" value="" Mat="" Typ="C" Fro="00" To="99" Num="1" Nul="0" Max="2" Min="1"
+                        Jus="R" Fil="0" Lan="1" Cap="شماره گروه آموزشي" Title="شماره گروه آموزشي درس"
+                        Chk="1" Def="">
+                </TD>
+                <TD align="left">
+                    <IMG align="absmiddle" class="c1" by="1000" bh="15" name="H5" src="/_Images/nophoto.gif"
+                        style="height: 15px; width: 15px; background-position: 0 -1000;" onclick="HlpFldList=Array('F01901'); window.parent.parent.Commander.act_data_frm('26')">
+                </TD>
+                <TD align="left">
+                    <INPUT class="txt" id="F01851" Nex="F01901" tabIndex="5" type="text" style="width: 40"
+                        HELP="4" value="" Mat="" Typ="C" Fro="00" To="99" Num="1" Nul="0" Max="2" Min="1"
+                        Jus="R" Fil="0" Lan="1" Cap="شماره دانشكده" Title="شماره دانشكده درس" Chk="1"
+                        Def="">
+                </TD>
+                <TD width="30">
+                    <IMG align="absmiddle" class="c1" by="1000" bh="15" name="H4" src="/_Images/nophoto.gif"
+                        style="height: 15px; width: 15px; background-position: 0 -1000;" onclick="HlpFldList=Array('F01851');window.parent.parent.Commander.act_data_frm('27')">
+                </TD>
+            </TR>
+            <TR>
+                <TD align="left">
+                    نام درس&nbsp;:&nbsp;
+                </TD>
+                <TD ColSpan="6">
+                    <INPUT class="txt" id="F02001" Nex="" tabIndex="22" type="text" style="width: 200"
+                        value="" Mat="" Typ="C" Num="0" Nul="1" Max="100" Min="1" Lan="1" Cap="نام" Title="نام"
+                        Chk="1" Def="">
+                </TD>
+            </TR>
+            <TR height="40">
+                <TD align="center" colspan="10">
+                    <img id="View" title="مشاهده" class="c1" by="2400" src="/_Images/nophoto.gif" style="width: 60px;
+                        background-position: 0 -2400;" onclick="HlpFldList=Array();if(window.parent.parent.Commander.act_data_frm('65')<0)return; DivCrs.style.display='none';">
+                    &nbsp;&nbsp;<img class="c1" class="c1" by="0" src="/_Images/nophoto.gif" style="width: 50px;
+                        background-position: 0 0;" onclick="F01851.focus();F01851.value='';F01851.UpdateSndData();F01901.value='';F01901.UpdateSndData();F01951.value='';F01951.UpdateSndData();F02001.value='';F02001.UpdateSndData()"
+                        title="پاك كردن">&nbsp;&nbsp;<img class="c1" by="3200" style="width: 50px; background-position: 0 -3200;"
+                            onclick="DivCrs.style.display='none';" src="/_Images/nophoto.gif" title="انصراف">
+                </TD>
+            </TR>
+        </TABLE>
+    </DIV>
+    <DIV id="DivPHD" style="border: thin outset; display: none; position: absolute; background-color: #ffffcc">
+        <TABLE height="70" style="margin: 10px; color: #600000">
+            <TR>
+                <TD align="left">
+                    نمره امتحان جامع
+                </TD>
+                <TD>
+                    &nbsp;:&nbsp;
+                </TD>
+                <TD width="120">
+                    <LABEL class="DATA" id="F38351">
+                    </LABEL>
+                </TD>
+            </TR>
+            <TR>
+                <TD align="left">
+                    کد رساله دکتري
+                </TD>
+                <TD>
+                    &nbsp;:&nbsp;
+                </TD>
+                <TD>
+                    <LABEL class="DATA" id="F38301">
+                    </LABEL>
+                </TD>
+            </TR>
+            <TR>
+                <TD align="left">
+                    تاريخ نامه امتحان جامع
+                </TD>
+                <TD>
+                    &nbsp;:&nbsp;
+                </TD>
+                <TD>
+                    <LABEL class="DATA" id="F38401">
+                    </LABEL>
+                </TD>
+            </TR>
+            <TR>
+                <TD align="left">
+                    شماره نامه امتحان جامع
+                </TD>
+                <TD>
+                    &nbsp;:&nbsp;
+                </TD>
+                <TD>
+                    <LABEL class="DATA" id="F38251">
+                    </LABEL>
+                </TD>
+            </TR>
+        </TABLE>
+    </DIV>
+    <SCRIPT src="j2.js" language="javascript"></SCRIPT>
+
+    <DIV id="DivStdHlp" style="display: none; z-index: 2; behavior: url(/_Styles/winlessmovable.htc);
+        cursor: move; position: absolute; background-color: background">
+        <IFRAME id="FrameStdHlp" style="z-index: 1; left: 3px; position: absolute; top: 3px"
+            src="/_scripts/FORM_STD_HLP.htm"></IFRAME>
+    </DIV>
+    <DIV id="DIVFrameHelp" style="z-index: 2; border-right: #0000cc thin solid; border-top: #0000cc thin solid;
+        left: 200px; visibility: hidden; behavior: url(/_Styles/winlessmovable.htc);
+        border-left: #0000cc thin solid; cursor: move; position: absolute; top: 100px;
+        background-color: background">
+        <IFRAME style="left: 0px; position: absolute; top: 2px" name="FrameHelp" src="/_Templates/help.htm"
+            frameBorder="no" scrolling="no"></IFRAME>
+    </DIV>
+    <!--DIV id="DIVNewForm" style="BORDER-RIGHT: #0000cc thin solid; BORDER-TOP: #0000cc thin solid; LEFT: 5px; display:none; BEHAVIOR: url(/_Styles/winlessmovable.htc); BORDER-LEFT: #0000cc thin solid; CURSOR: move; POSITION: absolute; TOP: 5px; BACKGROUND-COLOR: background"-->
+    <DIV style="z-index: 1;">
+        <IFRAME style="z-index: 1; display: none; position: absolute;" id="FrameNewForm"
+            src="/blank.htm" frameBorder="0" scrolling="no"></IFRAME>
+    </DIV>
+    <!--/DIV-->
+</BODY>
+</HTML>
